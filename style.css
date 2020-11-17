@@ -1,0 +1,166 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("images/bg-pattern-top-desktop.svg"),url("images/bg-pattern-bottom-desktop.svg");
+  background-position: top left,bottom right;
+  background-repeat: no-repeat;
+  height:100vh;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+.container{
+  margin-top: 10em;
+  margin-left: 5em;
+  display: flex;
+  
+}
+.text-container{
+  width: 40%;
+}
+
+#heading{
+  color:hsl(300, 43%, 22%);
+  
+  font-size: 2.5em;
+  font-weight: 700;
+  
+}
+#product{
+  color:hsl(303, 10%, 53%);
+}
+.ratings-container{
+  display:flex;
+  flex-direction: column;
+  margin-left: 4.5em;
+
+ 
+}
+.rating{
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.5em;
+  text-align: center;
+  margin: 0.9em;
+  padding: 0.8em;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  width: 100%;
+}
+.guru{
+  margin-left: 4.5em;
+}
+.tech{
+  margin-left: 6.5em;
+}
+.stars{
+  display: inline-block;
+}
+.rate{
+  display: inline-flex;
+}
+.customer-review{
+  display: flex;
+  flex-basis:33.3%;
+  margin-right:1.5em;
+  margin-left: 5em;
+  margin-top: 4em;
+  margin-bottom:7.5em;
+  
+}
+.customer{
+  background-color:hsl(300, 43%, 22%);
+  margin: 0px 20px 20px 0px;
+  border-radius:0.5em;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  
+  
+}
+
+.profile-pic{
+  border-radius: 50%;
+  float: left;
+  width: 15%;
+ 
+}
+.Irene{
+  margin-top: 1em;
+}
+.Anne{
+  margin-top:2em;
+  padding-bottom: 2em;
+}
+.name{
+  padding-top: 1.2em;
+ padding-left: 5em;
+ padding-bottom: 0.5em;
+ color: hsl(0, 0%, 100%);
+}
+span{
+  margin-top: 1.5em;
+  color: hsl(333, 80%, 67%);
+}
+.description{
+padding-top: 2.5em;
+padding-left: 0;
+line-height: 1.5;
+color: hsl(300, 24%, 96%);
+font-size: 0.8em;
+font-weight: 400;
+}
+
+
+@media only screen and (max-width:780px){
+  body {
+    background: url("images/bg-pattern-top-mobile.svg"),
+      url("images/bg-pattern-bottom-mobile.svg");
+    
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+  }
+  .container{
+    flex-direction: column;
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+    text-align: center;
+
+  }
+  .text-container{
+    width: 100%;
+   
+  }
+  .ratings-container{
+    margin-top: 2.5em;
+    width: 95%;
+    margin-left:0;
+  }
+  .rating{
+    margin-left: 0;
+  }
+  .customer-review{
+    flex-direction: column;
+    margin-left: 1.5em;
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
+  .description{
+    padding: 0.5em; 
+  }
+  .name{
+    padding-top:0.1em;
+   padding:0em;
+   margin:0;
+   
+  }
+
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
